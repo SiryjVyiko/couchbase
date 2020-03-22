@@ -13,7 +13,12 @@
   },
   "onInstall": [
     {
-      "cleanup-node"
+      "cmd[nosqldb]": {
+        "user": "root",
+        "commands": [
+          "node_cleanup"
+        ]
+      }
     },
     {
       "cmd": {
@@ -138,14 +143,6 @@
         "user": "root",
         "commands": [
           "rebalance_cluster"
-        ]
-      }
-    },
-    "cleanup-node": {
-      "cmd[nosqldb]": {
-        "user": "root",
-        "commands": [
-          "node_cleanup"
         ]
       }
     },
