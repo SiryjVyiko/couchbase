@@ -13,14 +13,6 @@
   },
   "onInstall": [
     {
-      "cmd[nosqldb]": {
-        "user": "root",
-        "commands": [
-          "/opt/couchbase/bin/node_cleanup"
-        ]
-      }
-    },
-    {
       "cmd": {
         "nodeId": "${nodes.nosqldb.master.id}",
         "user": "root",
