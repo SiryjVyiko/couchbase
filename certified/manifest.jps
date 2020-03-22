@@ -1,6 +1,6 @@
 {
-  "jpsType": "update",
-  "jpsVersion": "0.99",
+  "type": "update",
+  "version": "1.6.1",
   "id": "couchbase-auto-cluster",
   "name": "Auto Scalable Couchbase Community Edition Cluster",
   "globals": {
@@ -13,9 +13,7 @@
   },
   "onInstall": [
     {
-      "cleanup-node": {
-        "id": "${@clnode.id}"
-      }
+      "cleanup-node"
     },
     {
       "cmd": {
