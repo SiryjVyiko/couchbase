@@ -7,7 +7,7 @@
     "user": "admin",
     "pswd": "${fn.password}"
   },
-  "baseUrl": "https://raw.githubusercontent.com/jelastic-jps/couchbase/master/certified",
+  "baseUrl": "https://raw.githubusercontent.com/SiryjVyiko/couchbase/master/certified",
   "nodeGroupAlias": {
     "${targetNodes.nodeGroup}": "nosqldb"
   },
