@@ -16,7 +16,7 @@
       "cmd[nosqldb]": {
         "user": "root",
         "commands": [
-          "node_cleanup"
+          "/opt/couchbase/bin/node_cleanup"
         ]
       }
     },
