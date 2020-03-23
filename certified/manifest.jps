@@ -65,7 +65,7 @@
       }
     }
   ],
-  "onAfterScaleOut[nosqldb]": [
+  "onAfterServiceScaleOut[nosqldb]": [
     {
       "if (nodes.nosqldb.length > 1)": [
         {
@@ -84,7 +84,7 @@
       ]
     }
   ],
-  "onBeforeScaleIn[nosqldb]": [
+  "onBeforeServiceScaleIn[nosqldb]": [
     {
       "forEach(clnode:event.response.nodes)": {
         "remove-node": {
