@@ -26,7 +26,7 @@ onInstall:
   - cmd[${nodes.nosqldb.master.id}]: migrate_data; jem passwd set -p ${globals.pswd}
     user: root
   
-onAfterServiceScaleOut[nosqldb]: 
+onAfterScaleOut[nosqldb]: 
   - if (nodes.nosqldb.length > 1): 
     - forEach(clnode:event.response.nodes):
       - add-node: 
