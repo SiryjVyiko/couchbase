@@ -18,7 +18,7 @@ onInstall:
   - forEach(clnode:nodes.nosqldb):
     - if (${@clnode.id} != ${nodes.nosqldb.master.id}): 
       - add-node: 
-        address: ${@clnode.address}
+          address: ${@clnode.address}
   - if (nodes.nosqldb.length > 1): 
     - rebalance
   - cmd[${nodes.nosqldb.master.id}]: migrate_data; jem passwd set -p ${globals.pswd}
